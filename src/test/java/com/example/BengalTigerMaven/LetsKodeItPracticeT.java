@@ -44,7 +44,7 @@ public class LetsKodeItPracticeT {
     }
 
 
-    @AfterTest
+    @Test
     public void checkBoxs() throws InterruptedException {
 
         WebElement bmwCheckBox=driver.findElement(By.id("bmwcheck"));
@@ -60,7 +60,7 @@ public class LetsKodeItPracticeT {
         System.out.println("HONDA Check Box is selected" +" " + hondaCheckBox.isSelected());
 
     }
-    @AfterTest
+    @Test
     public void switchWindow() throws InterruptedException {
         /*System.setProperty("webdriver.gecko.driver", "C:/Users/13477/IdeaProjects/MavenProject/.idea/Driver/geckodriver.exe");
 
@@ -99,7 +99,7 @@ public class LetsKodeItPracticeT {
 
 
 
-    @AfterTest
+    @Test
     public void  switchTabHandle()throws InterruptedException{
         /*System.setProperty("webdriver.gecko.driver","C:/Users/13477/IdeaProjects/BengalTigerMaven/BengalTigerMaven/driver/geckodriver.exe");
         WebDriver driver=new FirefoxDriver();
@@ -127,7 +127,7 @@ public class LetsKodeItPracticeT {
 
 
     }
-    @AfterTest
+    @Test
     public void dropDown() throws InterruptedException {
        /* System.setProperty("webdriver.gecko.driver", "C:/Users/13477/IdeaProjects/MavenProject/.idea/Driver/geckodriver.exe");
 
@@ -149,7 +149,7 @@ public class LetsKodeItPracticeT {
 
     }
 
-    @AfterTest
+    @Test
     public void multipleSelect() throws InterruptedException {
         /*System.setProperty("webdriver.gecko.driver", "C:/Users/13477/IdeaProjects/MavenProject/.idea/Driver/geckodriver.exe");
 
@@ -177,7 +177,7 @@ public class LetsKodeItPracticeT {
         System.out.println("Done");
 
     }
-    @AfterTest
+    @Test
     public void isEnabledIsDisplayed(){
         driver.findElement(By.xpath("//input[@id='enabled-example-input']")).sendKeys("Hello");
         boolean b1=driver.findElement(By.xpath("//input[@id='enabled-example-input']")).isEnabled();
@@ -187,7 +187,7 @@ public class LetsKodeItPracticeT {
         System.out.println("Field is displayed-" +b2);
 
     }
-    @AfterTest
+    @Test
     public void switchAlert() throws InterruptedException {
 
         driver.findElement(By.xpath("//body/div[@id='page']/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[3]/div[3]/fieldset[1]/input[1]")).sendKeys("Rumel");
@@ -205,7 +205,7 @@ public class LetsKodeItPracticeT {
 
     }
 
-   /* @AfterTest
+   /* @Test
     public void handleMouseHover(){
         Actions act=new Actions(driver);
         WebElement mouseHover= driver.findElement(By.xpath("//button[@id='mousehover']"));
@@ -213,7 +213,7 @@ public class LetsKodeItPracticeT {
 
     }*/
 
-    @AfterTest
+    @Test
     public void webTable(){
         int rowCount=driver.findElements(By.xpath("//tbody/tr[1]")).size();
         int columCount=driver.findElements(By.xpath("//th[contains(text(),'Author')]")).size();
